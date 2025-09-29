@@ -1,2 +1,156 @@
-"# MIDTERMSCSS" 
-"# MIDTERMSCSS" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background: #fff;
+            width: 70%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            outline: none;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border: 1px solid #007bff;
+        }
+
+        .options {
+            margin: 10px 0 20px 20px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        hr {
+            margin: 25px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Answer the following question</h1>
+
+        <h2>Test Type</h2>
+        1. What is your name?
+        <input type="text" required placeholder="Answer">
+
+        2. What is your favorite programming language?
+        <input type="text" required placeholder="Answer">
+
+        3. The smallest and most basic unit of data in a computer.
+        <input type="text" required placeholder="Answer">
+
+        4. This is the stage where data, instructions, and information are saved for future use.
+        <input type="text" required placeholder="Answer">
+
+        <hr>
+        <h2>Radio Type</h2>
+        5. What is the first name of Java?
+        <div class="options">
+            <input type="radio" name="q5"> Oak <br>
+            <input type="radio" name="q5"> Digit <br>
+            <input type="radio" name="q5"> Bytes <br>
+        </div>
+
+        6. Memory known as volatile?
+        <div class="options">
+            <input type="radio" name="q6"> RAM <br>
+            <input type="radio" name="q6"> ROM <br>
+            <input type="radio" name="q6"> Bytes <br>
+        </div>
+
+        7. Memory known as nonvolatile?
+        <div class="options">
+            <input type="radio" name="q7"> RAM <br>
+            <input type="radio" name="q7"> ROM <br>
+            <input type="radio" name="q7"> Bytes <br>
+        </div>
+
+        <hr>
+        <h2>Checkbox</h2>
+        8. Major hardware components.
+        <div class="options">
+            <input type="checkbox" name="q8"> Main Memory <br>
+            <input type="checkbox" name="q8"> I/O devices <br>
+            <input type="checkbox" name="q8"> CPU <br>
+        </div>
+
+        9. The CPU performs.
+        <div class="options">
+            <input type="checkbox" name="q9"> Fetch <br>
+            <input type="checkbox" name="q9"> Execute <br>
+            <input type="checkbox" name="q9"> Decode <br>
+        </div>
+
+       10. Common Secondary Storage devices.
+        <div class="options">
+            <input type="checkbox" name="q10"> Hard Drive <br>
+            <input type="checkbox" name="q10"> Floppy Drive <br>
+            <input type="checkbox" name="q10"> DVD drive <br>
+        </div>
+
+        <button type="submit">Submit Answer</button>
+    </form>
+</body>
+</html>
